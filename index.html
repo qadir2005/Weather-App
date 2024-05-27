@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <!-- Css Link -->
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="homeContent.css">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+</head>
+</head>
+<body>
+    <header>
+        <div class="nav_bar">
+            <div class="logo"><h1><span style="color: aliceblue;">Weather</span> App</h1></div>
+            <div class="links">
+                <a href="./index.html" class="active">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./contact.html">Contact me</a>
+            </div>
+            <i class="fa-solid fa-bars" id="open_Links"></i>
+        </div>
+    </header>
+    <main>
+        <form id="weatherForm">
+            <input type="text" id="userInput" placeholder="Enter the City">
+            <button id="weatherBtn" type="submit">Search</button>
+        </form>
+        <h2 id="heading"></h2>
+        <div class="boxes">
+            <div class="box box1">
+                <h3 id="temp_heading">Temperatures</h3>
+                <p class="temp_box">°C</p>
+                <p class="temp1">Temperature is °C</p>
+                <p class="temp2">Min Temperature is " "</p>
+                <p class="temp3">Max Temperature is " "</p>
+            </div>
+            <div class="box box2">
+                <h3 id="humidity_heading">Humidity Info</h3>
+                <p class="humidity_box">%</p>
+                <p class="humidity1">Wind degree is </p>
+                <p class="humidity2">Feels like</p>
+                <p class="humidity3">Humidity is</p>
+            </div>
+            <div class="box box1">
+                <h3 id="wind_heading">Wind Info</h3>
+                <p class="wind_box">km/hr</p>
+                <p class="wind1">Wind Speed is</p>
+            </div>
+        </div>
+    </main>
+    <!-- <form id="weatherForm">
+        <input type="text"  id="userInput">
+        <button id="weatherBtn" type="submit">click me</button>
+        <p id="temp"></p>
+        <p id="air"></p>
+    </form> -->
+    <script src="script.js" ></script>
+</body>
+</html> 
